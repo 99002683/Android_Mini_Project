@@ -215,9 +215,9 @@ public class MainActivity extends Activity implements Button.OnClickListener, Se
                     else if(result.get(0).equals("hash")){
                         display.setText("#");
                     }
-//                    else{
-//                        display.setText(result.get(0));
-//                    }
+                    else{
+                        display.setText(result.get(0));
+                    }
                 }
                 break;
             }
