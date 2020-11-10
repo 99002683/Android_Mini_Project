@@ -22,7 +22,7 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
 
     private boolean isSpeaking = false;
 
-    public TextToVoice(Context context) {
+    public TextToVoice(Context context) {                                        //text to voice
         tContext = context;
         try {
             Log.d("TextToVoice", "started " + System.currentTimeMillis());
@@ -49,7 +49,7 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
                 }
 
                 @Override
-                public void onError(String s) {
+                public void onError(String s) {                                              //error
                     isSpeaking = false;
                     Log.e("TextToSpeech", "Error with " + s);
                     if (tFil != null) tFil.onError(TextToVoice.this);
@@ -79,13 +79,13 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
             Log.e("error", "Initialization Failed! " + status);
         }
     }
-    public void stop() {
+    public void stop() {                                                          //to stop
         if (allInited) {
             tTts.stop();
         }
     }
 
-    public void speak(String text) {
+    public void speak(String text) {                                             //to speak
         // Log.d("TextToSpeech", text + " " +  System.currentTimeMillis());
         if (isInit) {
             if (Build.VERSION.SDK_INT >= 21) {
@@ -101,7 +101,7 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
     }
 
 
-    public boolean speakingFunction() {
+    public boolean speakingFunction() {                                      
         return isSpeaking;
     }
 
