@@ -146,6 +146,6 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
         if (tTts != null) {
             tTts.shutdown();
             tTts = null;
-        }
+        }      
     }
 }
