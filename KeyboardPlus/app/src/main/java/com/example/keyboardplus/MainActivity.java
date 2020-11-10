@@ -89,7 +89,7 @@ public class MainActivity extends Activity implements Button.OnClickListener, Se
 
         callB =(ImageView)findViewById(R.id.buttonCall);
         ImageView simpleImageView=(ImageView) findViewById(R.id.buttonCall);
-        simpleImageView.setImageResource(R.drawable.callsymbol1);
+        simpleImageView.setImageResource(R.drawable.callkey);
 
 
 
