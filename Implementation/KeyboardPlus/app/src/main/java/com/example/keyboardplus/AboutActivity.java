@@ -16,12 +16,11 @@ public class AboutActivity extends Activity{
 
         t1.setText(R.string.name_link);
         t2.setText(R.string.about);
-        findViewById(R.id.finishButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.finishButton).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-
     }
 }
