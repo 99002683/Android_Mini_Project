@@ -19,7 +19,7 @@
         android:background="@color/cardview_dark_background"
         tools:layout_editor_absoluteY="8dp">
 
-        <TextView                                                               
+        <TextView
             android:id="@+id/about_link"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             android:textColor="@color/white"
             android:textStyle="normal"></TextView>
 
-        <Switch                                               //switch between keypad and text to speech
+        <Switch
             android:id="@+id/switchPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3">
-            <ImageView                                                 //tap to speak
+            <ImageView
                 android:id="@+id/speak"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
@@ -94,7 +94,7 @@
                 android:src="@android:drawable/ic_btn_speak_now" />
         </LinearLayout>
 
-        <ImageView                                                         //back button
+        <ImageView
             android:id="@+id/buttonClear"
             android:layout_width="50dp"
             android:layout_height="50dp"

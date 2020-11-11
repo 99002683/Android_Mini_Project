@@ -36,7 +36,6 @@ import java.util.TimerTask;
 
 
 public class MainActivity extends Activity implements Button.OnClickListener, SensorEventListener {
-    //
 
     private SensorManager mSensorManager;
 
@@ -49,10 +48,6 @@ public class MainActivity extends Activity implements Button.OnClickListener, Se
     private Switch switchPhone;
 
     private TextToVoice ttv;
-
-    private String[] hellos;
-    private String[] byes;
-    private String[] convos;
 
 
     Toolbar toolbar;
@@ -272,7 +267,7 @@ public class MainActivity extends Activity implements Button.OnClickListener, Se
     public void onClick(View v) {
         String key = (String) v.getTag();
         int tone = -1;
-        int time = 400;
+        int time = 100;
         if (key != null) {
             //Log.d("Button", key);
             String speak = "";
@@ -286,22 +281,24 @@ public class MainActivity extends Activity implements Button.OnClickListener, Se
                 }
 
             }
-            else if (key.equals("#")) {
+            else if (key.equals("0")) {
                 tone = ToneGenerator.TONE_DTMF_P;
                 speak = getString(R.string.zero);
                 //sayConvo();
 
             }
-            else if (key.equals("#")) {
-                tone = ToneGenerator.TONE_DTMF_P;
-                speak = getString(R.string.hash);
-                //sayConvo();
-
-            } else if (key.equals("*")) {
+            else if (history.endsWith("#")) {
+                tone = ToneGenerator.TONE_DTMF_P;}
+//            else if (key.equals("#")) {
+//                //tone = ToneGenerator.TONE_DTMF_P;
+//                //speak = getString(R.string.hash);
+//                //speak = getString(R.string.hash);
+//                //sayConvo();
+//            }
+            else if (key.equals("*")) {
                 tone = ToneGenerator.TONE_DTMF_S;
                 speak = getString(R.string.star);
                 //sayConvo();
-
             }
 
 
@@ -329,11 +326,6 @@ public class MainActivity extends Activity implements Button.OnClickListener, Se
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-//        if (event.values[0] == 0) {
-//            //startConvo();
-//        } else {
-//            //stopConvo();
-//        }
     }
 
     @Override
