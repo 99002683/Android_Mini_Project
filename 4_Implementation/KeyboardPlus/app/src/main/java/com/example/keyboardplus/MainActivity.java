@@ -36,7 +36,11 @@ import java.util.TimerTask;
 
 
 public class MainActivity extends Activity implements Button.OnClickListener, SensorEventListener {
+<<<<<<< HEAD:4_Implementation/KeyboardPlus/app/src/main/java/com/example/keyboardplus/MainActivity.java
 
+=======
+    
+>>>>>>> 8afd6f875ff0d69c4f2288c6046425e243f7fd5b:Implementation/KeyboardPlus/app/src/main/java/com/example/keyboardplus/MainActivity.java
     private SensorManager mSensorManager;
 
     private Sensor mSensor;
@@ -120,8 +124,6 @@ public class MainActivity extends Activity implements Button.OnClickListener, Se
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
-
-
         });
 
         speak = findViewById(R.id.speak);
