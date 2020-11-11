@@ -36,8 +36,7 @@ import java.util.TimerTask;
 
 
 public class MainActivity extends Activity implements Button.OnClickListener, SensorEventListener {
-    //
-
+    
     private SensorManager mSensorManager;
 
     private Sensor mSensor;
@@ -125,8 +124,6 @@ public class MainActivity extends Activity implements Button.OnClickListener, Se
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
-
-
         });
 
         speak = findViewById(R.id.speak);
