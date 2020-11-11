@@ -1,0 +1,19 @@
+High Level Requirements:
+
+  ID	                    Description
+HL_01	      Convert Text to Speech Accurately
+HL_02     	Convert Speech to Text Accurately
+HL_03	      Recognize the voice accurately
+HL_04     	Play the sounds according to the keypad names
+HL_05     	Redirect to the call page when user click on call page
+HL_06	      Sound should not play according to keypad names while we switch off  the button
+
+
+Low level requirements:
+
+  ID	                      Description
+LL_01	     Android mobile with Chrome 
+LL_02	     Minimum 3MB is required to download 
+LL_03	     Display the message while speech to text conversion
+LL_04   	 Display the Try Again message when user does not speak or unable to recognize the speech
+
